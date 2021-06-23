@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f5c4c25bfa3, pid=15994, tid=16002
+#
+# JRE version: OpenJDK Runtime Environment (11.0.10+9) (build 11.0.10+9)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.10+9, mixed mode, tiered, compressed oops, concurrent mark sweep gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x2fa3]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h" (or dumping to /home/konetall/core.15994)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Я, Андрей. Получил документ с грифом совершенно секретно и это меня не обрадывало, ведь я хотел, чтобы  алексей передал мне документ для служебного пользования. Вот это было бы хорошо, наверное
+
+Host: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, 8 cores, 7G, Arch Linux
+Time: Thu Mar 25 02:53:30 2021 MSK elapsed time: 18070.435084 seconds (0d 5h 1m 10s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f5c4811a800):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=16002, stack(0x00007f5c167a1000,0x00007f5c168a2000)]
+
+Stack: [0x00007f5c167a1000,0x00007f5c168a2000],  sp=0x00007f5c1689f0b0,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x2fa3]
+C  [libjimage.so+0x3c6e]
+C  [libjimage.so+0x4174]  JIMAGE_FindResource+0x104
+V  [libjvm.so+0x5c50dd]
